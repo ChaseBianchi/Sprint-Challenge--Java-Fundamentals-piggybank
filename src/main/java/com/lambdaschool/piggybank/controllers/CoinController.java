@@ -24,7 +24,7 @@ public class CoinController {
         coinrep.findAll().iterator().forEachRemaining(myList::add);
         for (Coin c : myList) {
             System.out.println(c.getQuantName());
-        }
+        } 
         double total = 0;
         for(Coin c : myList){
             total+=c.getTotal();
